@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Syne+Mono&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Syne Mono', monospace;
+    background-image: linear-gradient(to right, #2ed573,#1e90ff );
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+    border: 2px solid black;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.box{
+    display: flex;
+    position: relative;    
+    height: 56px;
+}
+
+.input input{
+    height: 0;
+    width: 0;
+    font-size: 20px;
+    padding: 0px 15px;
+    transition: width 0.3s ease-out; 
+    border: none;
+}
+
+.box .btn button{
+    top: 0;
+    left:0;
+    position: relative; 
+    font-size: 30px;
+    height: 100%;
+    width: 65px;
+    background-color: hotpink;
+    color: whitesmoke;
+    border: none;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.box .btn button:hover{
+    background-color: black;
+}
+
+.input input:focus,
+.btn button {
+    outline: none;
+}
+
+.input.active input{
+    height: 100%;
+    width: 220px
+}
